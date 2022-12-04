@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="./style.scss">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="container">
@@ -18,16 +18,16 @@
                 <div class="login-form-content">
                     <div class="form-item">
                         <label for="email">Enter Email</label>
-                        <input type="text" name="email" id="email>
+                        <input type="text" name="email" id="email">
                     </div>
                     <div class="form-item">
                         <label for="password">Enter Password</label>
-                        <input type="password" name="password" id="password>
+                        <input type="password" name="password" id="password">
                     </div>
                     <div class="form-item">
                         <div class="checkbox">
-                            <input type="checkbox" name="rememberMe" id="rememberMe">
-                            <label for="rememberMe">Remember me</label>
+                            <input type="checkbox" name="rememberMe" id="rememberMe" checked>
+                            <label class="checkboxLabel" for="rememberMe">Remember me</label>
                         </div>
                     </div>
                     <button type="submit">Sign In</button>
@@ -43,7 +43,7 @@
                             Google Login
                     </a>
                 </div>
-            </div>
+            </form>
         </div>
         <div class="login-right">
             <img src="./assets/illustration.svg" alt="illustration boy">

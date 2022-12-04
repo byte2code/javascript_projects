@@ -36,6 +36,8 @@ body{
     background: #eee;
     display: flex;
     justify-content: center;
+    user-select: none;
+    pointer-events: none;
 
     img{
         width: 80%;

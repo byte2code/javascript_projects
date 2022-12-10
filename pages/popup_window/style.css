@@ -18,19 +18,21 @@ main {
   justify-content: center;
 }
 main .container {
-  display: none;
-}
-main .overlay {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-main .overlay .card-container {
-  background: #fffffe;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+main .container .content button {
+  padding: 10px 60px;
+}
+main .card-container {
+  visibility: hidden;
+  background: #fffffe;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
   display: flex;
   flex-direction: column;
   padding: 2.5rem 2rem;
@@ -38,36 +40,37 @@ main .overlay .card-container {
   width: 350px;
   box-shadow: rgba(255, 255, 255, 0.5) 0 0 10px 1px;
   border-radius: 0.5rem;
+  transition: transform 400ms, top 400ms;
 }
-main .overlay .card-container .card-header {
+main .card-container .card-header {
   position: relative;
   margin-bottom: 2.5rem;
 }
-main .overlay .card-container .card-header span {
+main .card-container .card-header span {
   position: absolute;
   top: -90px;
   left: 50%;
   transform: translateX(-50%);
 }
-main .overlay .card-container .card-header span svg {
+main .card-container .card-header span svg {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   box-shadow: 0 0 1px 3px rgba(255, 255, 255, 0.2);
 }
-main .overlay .card-container .card-body {
+main .card-container .card-body {
   text-align: center;
   margin-bottom: 2rem;
 }
-main .overlay .card-container .card-body h2 {
+main .card-container .card-body h2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
-main .overlay .card-container .card-body p {
+main .card-container .card-body p {
   font-size: 1.15rem;
   margin-bottom: 1rem;
 }
-main .overlay .card-container .card-footer button {
+main .card-container .card-footer button {
   width: 100%;
   padding: 0.5rem 0;
   font-size: 1rem;
@@ -75,6 +78,12 @@ main .overlay .card-container .card-footer button {
   background: #25AE88;
   color: #FFFFFF;
   border-radius: 0.25rem;
+}
+
+.open-popup {
+  visibility: visible !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) scale(1) !important;
 }
 
 button {

@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #46C2CB;
+  font-family: "Proza Libre", sans-serif;
+}
+
+main {
+  background: #46C2CB;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .container {
+  display: none;
+}
+main .overlay {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+main .overlay .card-container {
+  background: #fffffe;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 2rem;
+  padding-bottom: 1.25rem;
+  width: 350px;
+  box-shadow: rgba(255, 255, 255, 0.5) 0 0 10px 1px;
+  border-radius: 0.5rem;
+}
+main .overlay .card-container .card-header {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+main .overlay .card-container .card-header span {
+  position: absolute;
+  top: -90px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+main .overlay .card-container .card-header span svg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 3px rgba(255, 255, 255, 0.2);
+}
+main .overlay .card-container .card-body {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+main .overlay .card-container .card-body h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+main .overlay .card-container .card-body p {
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+}
+main .overlay .card-container .card-footer button {
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  min-height: unset;
+  background: #25AE88;
+  color: #FFFFFF;
+  border-radius: 0.25rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  line-height: 150%;
+  align-items: center;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  display: inline-flex;
+  justify-content: center;
+  min-height: 3rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: baseline;
+  width: auto;
+  border-color: #003872;
+  color: #003872;
+}
+button:hover, button:focus {
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 5px 0;
+}
+button:active {
+  transform: scale(0.98);
+}/*# sourceMappingURL=style.css.map */
